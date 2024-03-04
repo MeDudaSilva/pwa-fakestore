@@ -32,13 +32,18 @@ const menuAberto = ref(false);
   </template>
 
 <style scoped>
+h1{
+    color: rgb(255, 0, 212);
+}
 header {
-  background: #fff;
+  background: #000000;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   padding: 0.2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom:2px solid rgb(255, 238, 3);
+  color: rgb(255, 238, 3);
 }
 
 .header--logo {

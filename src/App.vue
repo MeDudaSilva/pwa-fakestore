@@ -7,3 +7,9 @@ import MenuSuperior from '@/components/MenuSuperior.vue';
   <MenuSuperior />
   <ListagemProdutos />
 </template>
+
+<style scoped>
+*{
+  background-color: black;
+}
+</style>

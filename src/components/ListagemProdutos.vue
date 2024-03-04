@@ -50,6 +50,10 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
    }
  }
 
+ h1{
+  color: rgb(255, 238, 3);
+ }
+
  .container {
    display: flex;
    flex-wrap: wrap;
@@ -67,11 +71,14 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
    flex-direction: column;
    width: 15rem;
    height: 25rem;
-   background: #fff;
+   background: #000000;
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
    border-radius: 10px;
    margin: auto;
    overflow: hidden;
+   border:1px solid yellow;
+   color: rgb(255, 255, 202);
+   padding:1.4vh;
  }
 
  .card--avatar {
