@@ -46,8 +46,8 @@ header {
   align-items: center;
 }
 .header--logo img {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 2.5rem;
   margin-right: 0.5rem;
 }
 nav ul {
