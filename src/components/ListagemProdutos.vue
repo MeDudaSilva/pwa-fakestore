@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import { useScreen } from '@/composables/screen';
 
-const { browserWidth, deviceWidth, isMobile } = useScreen();
+const { browserWidth, deviceWidth, isMobile, tablet } = useScreen();
 const produtos = ref([]);
 
 onMounted(async () => {
@@ -19,8 +19,10 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
   <div>
     <h1>
        Produtos - {{ browserWidth }} - {{ deviceWidth }} - {{
-      isMobile}} 
+      isMobile}} - {{ tablet }} - {{ desctop }}
       <span v-if="isMobile">É móvel</span>
+      <span v-if="tablet">tablet</span>
+      <span v-if="desctop">desctop</span>
     </h1>
     <div class="container">
       <div class="card" v-for="produto in produtos" :key="produto.id">
@@ -34,6 +36,9 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
 </template>
 
 <style scoped>
+.card h1{
+  color: rgb(231, 162, 11);
+}
  @media (max-width: 768px) {
    .container {
      gap: 0.5rem;
