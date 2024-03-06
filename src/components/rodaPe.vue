@@ -1,32 +1,35 @@
 <template>
-
-<footer>
-<div class="conheca-nos">
-<div class="sobre"></div>
-<div class="acessibilidade"></div>
-<div class="termos"></div>
-<div class="comunidade"></div>
-</div>
-<div class="sociais">
-<div class="email"></div>
-<div class="whatsapp"></div>
-<div class="twitter"></div>
-<div class="instagram"></div>
-</div>
-<div class="pagamento">
-<div class="cartao"></div>
-<div class="pix"></div>
-<div class="boleto"></div>
-</div>
-</footer>
-    
+  <footer>
+    <div class="conheca-nos">
+      <div class="sobre">Sobre nós</div>
+      <div class="acessibilidade">Acessibilidade</div>
+      <div class="termos">Termos de uso</div>
+    </div>
+    <div class="sociais">
+      <div class="email">Email</div>
+      <div class="telefone">Telefone</div>
+      <div class="twitter">Twitter</div>
+      <div class="instagram">Instagram</div>
+    </div>
+    <div class="pagamento">
+      <div class="credito">Cartão de crédito</div>
+      <div class="debito">Cartão de débito</div>
+      <div class="pix">Pix</div>
+      <div class="boleto">Boleto</div>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
-
 footer {
-    background-color: aliceblue;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(255, 238, 3);
+  width: 100%;
+  height: 200px;
+  align-items: center;
 }
-
+div{
+  margin: 2vh;
+}
 </style>

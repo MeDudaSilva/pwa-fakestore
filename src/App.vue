@@ -13,6 +13,7 @@ import RodaPe from '@/components/rodaPe.vue';
 
 <style scoped>
 *{
+  width: 100%;
   background-color: black;
 }
 </style>

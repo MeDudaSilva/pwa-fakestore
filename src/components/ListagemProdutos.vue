@@ -19,10 +19,10 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
   <div>
     <h1>
        Produtos - {{ browserWidth }} - {{ deviceWidth }} - {{
-      isMobile}} - {{ tablet }} - {{ desctop }}
+      isMobile}} - {{ tablet }} - {{ desktop }}
       <span v-if="isMobile">É móvel</span>
       <span v-if="tablet">tablet</span>
-      <span v-if="desctop">desctop</span>
+      <span v-if="desktop">desktop</span>
     </h1>
     <div class="container">
       <div class="card" v-for="produto in produtos" :key="produto.id">
