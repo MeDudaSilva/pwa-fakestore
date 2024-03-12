@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 body {
-  background: #fdfdfd;
+  background: #000000;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
 }
 h1 {
-  color: #e74c3c;
+  color: rgb(255, 238, 3);
   margin-bottom: 0.5rem;
 }

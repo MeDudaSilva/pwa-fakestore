@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import { useScreen } from '@/composables/screen';
 
-const { browserWidth, deviceWidth, isMobile, tablet } = useScreen();
+const { browserWidth, deviceWidth, isMobile, tablet, desktop } = useScreen();
 const produtos = ref([]);
 
 onMounted(async () => {
@@ -53,10 +53,6 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
    .card {
      width: 22rem;
    }
- }
-
- h1{
-  color: rgb(255, 238, 3);
  }
 
  .container {

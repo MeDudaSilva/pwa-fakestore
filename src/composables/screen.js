@@ -24,5 +24,5 @@ export function useScreen() {
     window.removeEventListener('resize', onBrowserResize);
   });
 
-  return { browserWidth, deviceWidth, isMobile, tablet };
+  return { browserWidth, deviceWidth, isMobile, tablet, desktop };
 }

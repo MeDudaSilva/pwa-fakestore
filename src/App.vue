@@ -1,19 +1,17 @@
 <script setup>
-import ListagemProdutos from '@/components/ListagemProdutos.vue';
-import MenuSuperior from '@/components/MenuSuperior.vue';
-import RodaPe from '@/components/rodaPe.vue';
+  import { useMonitor } from '@/composables/monitor';
 
+  const { menu } = useMonitor();
 </script>
 
 <template>
-  <MenuSuperior />
-  <ListagemProdutos />
-  <RodaPe />
+  <div>
+    <component :is="menu" />
+    <main>
+      <router-view />
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024</p>
+    </footer>
+  </div>
 </template>
-
-<style scoped>
-*{
-  width: 100%;
-  background-color: black;
-}
-</style>
