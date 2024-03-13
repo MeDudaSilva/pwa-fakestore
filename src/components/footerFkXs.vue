@@ -1,30 +1,35 @@
-<template>
-    <footer>
-      <div class="conheca-nos">
-        <div class="sobre">Sobre nós</div>
-   
-      </div>
-      <div class="sociais">
-        <div class="email">Email</div>
+<script setup>
+import Account from "vue-material-design-icons/Account.vue";
+import Star from "vue-material-design-icons/Star.vue";
+import Home from "vue-material-design-icons/Home.vue";
+</script>
 
-      </div>
-      <div class="pagamento">
-        <div class="credito"><img src="@/assets/logoFakeStore.png" alt=""></div>
-      </div>
-    </footer>
-  </template>
-  
-  <style scoped>
-  footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(255, 238, 3);
-    width: 100%;
-    height: 200px;
-    align-items: center;
-  }
-  div{
-    margin: 2vh;
-  }
-  </style>
-  
+<template>
+  <footer>
+    <div class="conheca-nos">
+      <Star size="50px" />
+    </div>
+    <div class="home">
+      <Home size="50px"/>
+    </div>
+    <div class="sociais">
+      <Account size="50px"/>
+    </div>
+  </footer>
+</template>
+
+<style scoped>
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(231, 162, 11);
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  position: fixed;
+  bottom: 0%;
+}
+img {
+  width: 10vh;
+}
+</style>

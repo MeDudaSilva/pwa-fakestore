@@ -12,7 +12,7 @@
   <header>
     <div class="header--logo">
       <img src="@/assets/logoFakeStore.png" alt="Logo" />
-      <h1>FakeStore - Md</h1>
+      <h1>FakeStore - LG</h1>
     </div>
     <nav>
       <ul :class="menuAberto ? 'menu' : ''">

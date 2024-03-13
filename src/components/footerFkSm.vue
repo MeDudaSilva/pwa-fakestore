@@ -1,21 +1,17 @@
+<script setup>
+import Account from "vue-material-design-icons/Home.vue";
+</script>
+
 <template>
   <footer>
     <div class="conheca-nos">
-      <div class="sobre">Sobre nós</div>
-      <div class="acessibilidade">Acessibilidade</div>
-      <div class="termos">Termos de uso</div>
+      <Account/>
     </div>
     <div class="sociais">
-      <div class="email">Email</div>
-      <div class="telefone">Telefone</div>
-      <div class="twitter">Twitter</div>
-      <div class="instagram">Instagram</div>
+      <div class="credito"><img src="@/assets/logoFakeStore.png" alt="" /></div>
     </div>
     <div class="pagamento">
-      <div class="credito">Cartão de crédito</div>
-      <div class="debito">Cartão de débito</div>
-      <div class="pix">Pix</div>
-      <div class="boleto">Boleto</div>
+      <div class="credito"><img src="@/assets/logoFakeStore.png" alt="" /></div>
     </div>
   </footer>
 </template>
@@ -24,12 +20,14 @@
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(255, 238, 3);
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 200px;
+  height: 15vh;
   align-items: center;
+  position: fixed;
+  bottom: 0%;
 }
-div{
-  margin: 2vh;
+img {
+  width: 10vh;
 }
 </style>

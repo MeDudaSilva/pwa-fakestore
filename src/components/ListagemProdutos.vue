@@ -6,6 +6,7 @@ import { useScreen } from '@/composables/screen';
 
 const { browserWidth, deviceWidth, isMobile, tablet, desktop } = useScreen();
 const produtos = ref([]);
+const maxLength = 200;
 
 onMounted(async () => {
   const response = await axios.get('https://fakestoreapi.com/products');
@@ -27,7 +28,7 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
     <div class="container">
       <div class="card" v-for="produto in produtos" :key="produto.id">
         <h1 class="card--title">{{ produto.title }}</h1>
-        <p>{{ produto.description }}</p>
+        <p>{{ produto.descricao}}</p>
         <p>{{ formatPrice(produto.price) }}</p>
         <img class="card--avatar" :src="produto.image" :alt="produto.title" />
       </div>
@@ -39,6 +40,10 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
 .card h1{
   color: rgb(231, 162, 11);
 }
+p{
+  font-size: 12px;
+}
+.card h1
  @media (max-width: 768px) {
    .container {
      gap: 0.5rem;
